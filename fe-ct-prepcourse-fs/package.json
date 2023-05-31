@@ -1,0 +1,19 @@
+{
+  "name": "clasescurso",
+  "version": "1.0.0",
+  "description": "![HenryLogo](./Assets//logoBannerHenry.png)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "marcela",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MARCELAOSORIO0623/fe-ct-prepcourse-fs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MARCELAOSORIO0623/fe-ct-prepcourse-fs/issues"
+  },
+  "homepage": "https://github.com/MARCELAOSORIO0623/fe-ct-prepcourse-fs#readme"
+}

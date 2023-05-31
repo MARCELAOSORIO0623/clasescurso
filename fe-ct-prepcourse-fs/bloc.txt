@@ -1,0 +1,10 @@
+comandos cli  
+
+ls lista
+ls -l lista carpetas
+cd.. un directorio atras
+cd xxx me enrruta en ese directorio
+mkdir xxx crea una carpeta
+touch xxx  crea un archivo con extension
+
+npm init inicializa npm

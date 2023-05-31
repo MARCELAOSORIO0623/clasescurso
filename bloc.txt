@@ -1,0 +1,241 @@
+comandos cli  
+
+ls lista
+ls -l lista carpetas
+cd.. un directorio atras
+cd xxx me enrruta en ese directorio
+mkdir xxx crea una carpeta
+touch xxx  crea un archivo con extension
+
+npm init inicializa npm
+npm i instala npm
+
+
+git init
+
+git add README.md agrega un readme a nuestro proyecto
+
+git clone https...  clona un repo a mi pc
+
+git commit -m "commit de prueba" guarda los cambios en el repo
+
+git pull origin main especifica explícitamente que quieres empujar la rama main a la rama main en el repositorio remoto origin. Esto es útil si tienes varias ramas locales y solo deseas empujar cambios en la rama main al repositorio remoto correspondiente.
+
+git push empujará todas las ramas locales que tengan el mismo nombre que una rama en el repositorio remoto correspondiente. Si solo tienes una rama local llamada main, entonces git push y git push origin main serán equivalentes.
+
+git push origin main especifica explícitamente que quieres empujar la rama main a la rama main en el repositorio remoto origin. Esto es útil si tienes varias ramas locales y solo deseas empujar cambios en la rama main al repositorio remoto 
+
+git pull origin main --allow-unrelated-histories  Este comando le dice a Git que deseas permitir la unión de dos historiales no relacionados.
+
+
+    Undefined: typeof instance === "undefined"
+    Boolean: typeof instance === "boolean"
+    Number: typeof instance === "number"
+    String: typeof instance === "string"
+    BigInt: typeof instance === "bigint"
+    Symbol: typeof instance === "symbol"
+
+node  comando para abrir un motor d node para ejecutar tareas
+
+--------------------------------------
+
+math,pow(2, 3); //2 elevado al cubo seria 8
+
+math.round(0.49)  //redondea el decimal al entero mas proximo el valor a 0.50
+
+math.floor(5.93)  //redondea al entero de menor valor 5
+
+math.ceil(3.27) // redondea al entero de mayor valor 4
+
+math.max(1, 2, 3, 4, 5); // devuelve el maximo de numeros, 5
+math.min(1, 2, 3, 4, 5); //devuelve el min de numeros, 1
+
+math.random(); // devuelve un decimal entre 0 y 1, 0.805157....
+
+
+operadores logicos
+NOT AND   OR
+
+&& y ej: (5<2) && (5>3)   false
+|| o ej: (5<2) || (5>3)   true
+!  no ej: !(5<2)  true
+
+
+bucle for
+var suma = 0;
+for(var i = 1; i<=10; i++) {
+    suma = suma + 1;
+    console.log(suma);
+}
+
+y el while
+var suma = 0;
+while (suma < 3){
+    suma = suma + 1;
+    console.log(suma);
+}
+
+switch en caso
+ej:
+
+switch (expor) {
+case naranjas;
+console.log('el kilogramo cuesta 90');
+break;
+
+case bananos;
+console.log('el kilogramo cuesta 80');
+
+case......
+
+default
+console.log('por el momento no disponemos de ' + expor + '.');
+
+
+do while  haga mnientras que
+var result = '';
+var i = 0;
+do {
+    i = i + 1;
+    result = result + i;
+}while (i < 5);
+console.log(result);
+
+
+
+array
+
+// lista de compras
+/*
+var listaDeCompras = [];
+listaDeCompras[0] = 'Tomates';
+listaDeCompras[1] = 'lechuga';
+console.log(listaDeCompras);
+
+//ver lista de compras
+var elementoDelArray = listaDeCompras[1];
+console.log(elementoDelArray);
+
+// largo
+var nombres = ['mat', 'mari'].length;
+console.log(nombres);
+
+
+
+METODOS:  FUNCIONES PREDEFINIDAS Q NOS PERMITEN REALIZR TAREAS MUCHO MAS RAPIDO
+
+//metodos de los array
+var colores = ['azul', 'verde'];
+colores.push('rojo');   // agrehga al final del array
+console.log(colores);
+colores.unshift('blanco');  //agrega al inicio del array
+console.log(colores);
+colores.pop();  // borra la ultima posicion
+console.log(colores);
+colores.shift();  //borra la prmera posicion
+console.log(colores);
+
+//metodo includes  // verificar si un arreglo incluye un elemento, true o false
+var pintores = ['picasso', 'van gogh', 'dali'];
+var incluyedali = pintores.includes('monet');  
+console.log(incluyedali);
+
+
+//metodo every   verifica si todos los elementos cumplen con una condicion
+var numeros = [7, 6, 8, 9];
+var cumplencondicion = numeros.every((num) => {
+    return num > 5;
+});
+console.log(cumplencondicion);
+
+
+//metodo split   separa transforma strings en arreglos
+var palabra = 'henri'; // corregir la ultima letra a y
+var palabraseparada = palabra.split('');  //separamos las letras de la palabra
+palabraseparada.pop(); //quito ultimo elemento del arreglo
+palabraseparada.push('y'); //agrego elemento al final
+console.log(palabraseparada);
+
+//metodo join  une   transforma strings en arreglos
+var palabraunir = palabraseparada.join('');  //reunifica los elementos
+console.log(palabraunir);  
+
+//metodo forEach   imprime cada uno de los elementos independientemente recorre los elementos
+var  numeros = [1, 2, 3, 4];
+numeros.forEach((num) => console.log(num)); 
+numeros.forEach((num) => {if(num >= 3) {  // busca e imprime un elemento 
+    console.log(num)}}); 
+
+//metodo map   modifica elementos del arreglo  recorre los elementos y modifica
+var masuno = numeros.map((num) => { // le sumo 1 a todos los elementos del arreglo
+    return num + 1;
+});
+console.log(masuno);
+
+// ciclos con arrays
+function encontrarletP(string) {
+    var letras = string.split('');
+    for(let i = 0; i < letras.length; i++) {
+        if(letras[i] == 'p') {
+            console.log('si contiene la P')
+        }
+    }
+    console.log('no contiene la p');
+}
+encontrarletP('cami');*/
+
+var arr = [];
+while (arr.length < 5) {
+    arr.push('cami');
+}
+console.log(arr);
+
+
+////////////////////////////////////////////////
+
+/* un objeto es un arreglo donde se guardan datos. a diferencia de las matrices que tienen elementos valorados en indices
+los objetos usan un concepto llamado pares de clave:valor*/
+
+
+formas de sintaxis de los objetos
+
+dot-notation . (punto)
+braket-notation  []  corchetes
+
+var personas = {
+    nombre: 'lucas', 
+    edad: 26,
+    estudios: {esprogramador: true}   /// aca tenemos un objeto dentro de un objeto
+};
+
+//acceder
+console.log(personas.edad);
+
+//asignar
+personas.nombre = 'martin';
+console.log(personas.nombre);
+
+//crear
+var autos = {};
+autos.marcas = ['ford', 'audi', 'ferrari'];
+console.log(autos);
+
+
+//borrar
+delete autos.marcas;
+console.log(autos);
+
+//objeto  
+var atuendos = {
+    manos: ['guantes', 'anillos'], //propiedad arreglo
+}; // se cierran siempre con ;
+console.log(atuendos.manos);
+
+*************
+
+METODOS DE LOS OBJETOS        
+
+hasOwnProperty
+
+
+  
